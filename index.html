@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster Survivors - Epic Survival Game</title>
-    <link rel="canonical" href="https://monstersurvivors.com" />
+    <link rel="canonical" href="https://emogames.online/" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FRENENLJY"></script>
     <script>
@@ -12,7 +12,14 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-7FRENENLJY');
+      gtag('config', 'G-7FRENENLJY', {
+        'debug_mode': true,
+        'send_page_view': true
+      });
+      
+      // 添加调试信息
+      console.log('Google Analytics initialized with ID: G-7FRENENLJY');
+      console.log('Current URL:', window.location.href);
     </script>
     <style>
         /* Reset and Base Styles */
